@@ -25,7 +25,7 @@ function addTask(task) {
 
 function removeTask() {
     taskStack.pop();
-    $('.task:first-child').fadeOut(100, function() {
+    $('.task:first-child').css('background-color', '#bbffbb').delay(100).fadeOut(200, function() {
         $(this).remove()
     });
     // refreshStack();
