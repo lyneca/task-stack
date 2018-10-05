@@ -105,7 +105,7 @@ hr {
 }
 
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
     .task-add {
         width: 60%;
         margin-right: 5px !important;
@@ -118,7 +118,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .about {
         display: none;
     }
