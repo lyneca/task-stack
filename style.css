@@ -94,6 +94,7 @@ hr {
 
 .task {
     border: 1px solid #bbbbbb;
+    overflow-wrap: break-word;
     border-radius: 5px;
     padding: 10px;
     margin: 10px auto;
