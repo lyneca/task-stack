@@ -26,6 +26,10 @@ header > h1 {
     border-radius: 5px;
 }
 
+.task-add:focus {
+    outline: 0;
+}
+
 .task-submit {
     display: none;
 }
