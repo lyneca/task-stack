@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Inconsolata'); */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
     font-family: "Inconsolata", "Courier New", monospace;
@@ -8,12 +8,20 @@ body {
 header {
     border-bottom: 1px solid #bbbbbb;
     text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
 }
 
 header > h1 {
     font-size: 60px;
     font-weight: normal;
-    margin: 20px;
+    margin: 10px;
+}
+
+.tasks {
+    margin-top: 173px;
 }
 
 .task-add {
@@ -38,6 +46,6 @@ header > h1 {
     border: 1px solid #bbbbbb;
     border-radius: 5px;
     padding: 10px;
-    margin: 5px auto;
+    margin: 10px auto;
     width: 400px;
 }
