@@ -80,3 +80,16 @@ hr {
     font-size: 20px;
     transition: background-color 0.1s;
 }
+
+
+@media screen and (max-width: 550px) {
+    .task-add, .task {
+        width: calc(90% - 20px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        display: none;
+    }
+}
