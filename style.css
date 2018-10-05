@@ -54,6 +54,8 @@ hr {
 }
 
 .task-add {
+    box-sizing: border-box;
+    display: inline-block;
     width: 500px;
     margin: 10px;
     padding: 10px;
@@ -69,6 +71,24 @@ hr {
 
 .task-submit {
     display: none;
+    margin: 10px;
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    color: #777777;
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.task-submit:hover {
+    background-color: #eeeeee;
 }
 
 .task {
@@ -83,8 +103,15 @@ hr {
 
 
 @media screen and (max-width: 550px) {
-    .task-add, .task {
-        width: calc(90% - 20px);
+    .task-add {
+        width: 60%;
+        margin-right: 5px !important;
+    }
+    .task {
+        width: 90%;
+    }
+    .task-submit {
+        display: inline-block;
     }
 }
 

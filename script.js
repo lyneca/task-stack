@@ -27,9 +27,21 @@ function removeTask() {
     taskStack.pop();
     $('.task:first-child').css('background-color', '#bbffbb').delay(100).fadeOut(200, function() {
         $(this).remove()
+        if ($('.task').length == 0) {
+            $('.task-submit').html('<i class="fas fa-plus"></i>');
+        }
     });
+
     // refreshStack();
 }
+
+$('.task-add').keyup(function() {
+    if ($('.task-add').val() != '' || $('.task').length == 0) {
+        $('.task-submit').html('<i class="fas fa-plus"></i>');
+    } else {
+        $('.task-submit').html('<i class="fas fa-check"></i>');
+    }
+});
 
 $('.task-form').submit(function(event) {
     if ($('.task-add').val() == '') {
