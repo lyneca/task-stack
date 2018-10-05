@@ -58,6 +58,7 @@ hr {
     display: inline-block;
     width: 500px;
     margin: 10px;
+    margin-right: 5px;
     padding: 10px;
     font-size: 30px;
     color: #777777;
@@ -70,7 +71,7 @@ hr {
 }
 
 .task-submit {
-    display: none;
+    /* display: none; */
     margin: 10px;
     margin-left: 5px;
     padding: 10px;
